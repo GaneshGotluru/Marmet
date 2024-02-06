@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .cont {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .cont button img {
+            height: 50px;
+            width: 50px;
+        }
+        .cont button h3 {
+            margin: 0;
+        }
+        #productList {
+            padding: 0 20px;
+        }
+        .product {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Media Queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            .cont {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">SELECT YOUR CHOICE</h1>
+    <div class="cont">
+        <button id="menBtn">
+            <img src="./images/man.png" alt="">
+            <h3>Men</h3>
+        </button>
+        <button id="womenBtn">
+            <img src="./images/woman.png" alt="">
+            <h3>Women</h3>
+        </button>
+        <button id="kidsBtn">
+            <img src="./images/kids.png" alt="">
+            <h3>Kids</h3>
+        </button>
+    </div>
+    <div id="productList"></div>
+
+    <script src="./01.js"></script>
+</body>
+</html>
