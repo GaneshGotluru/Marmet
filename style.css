@@ -33,32 +33,28 @@
     background-color:black;
 }
 
-/* Media Queries for responsiveness */
 
-/* Mobile Screen: Up to 767px */
 @media screen and (max-width: 767px) {
     .cont {
         flex-direction: column;
         align-items: center;
     }
     .cont button {
-        width: 80%; /* Adjust button width for better fit on smaller screens */
+        width: 80%; 
     }
     #productList {
-        padding: 0; /* Remove padding for better space utilization */
+        padding: 0; 
     }
 }
 
-/* Tablet Screen: 768px to 1024px */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .cont button {
-        width: 40%; /* Adjust button width for better fit on tablets */
+        width: 40%; 
     }
 }
 
-/* Desktop Screen: Above 1025px */
 @media screen and (min-width: 1025px) {
     .cont button {
-        width: 25%; /* Maintain original button width for desktop */
+        width: 25%; 
     }
 }
